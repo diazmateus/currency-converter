@@ -13,7 +13,7 @@ export default function App() {
 
 
 const fetchExchange = async currency => {
-    const response = await fetch(`https://appi.ratesapi.io/api/latest?base=${currency}`)
+    const response = await fetch(`https://api.ratesapi.io/api/latest?base=${currency}`)
     return await response.json();
 }
 
